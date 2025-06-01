@@ -42,7 +42,7 @@ def main():
                 st.session_state.answers = {}
                 st.session_state.explanations = {}
                 st.session_state.quiz_started = True
-                st.experimental_rerun()
+                st.rerun()
     
     # Display quiz if it's started
     else:
@@ -51,7 +51,7 @@ def main():
             if st.sidebar.button("Start New Quiz"):
                 st.session_state.quiz_started = False
                 st.session_state.questions = None
-                st.experimental_rerun()
+                st.rerun()
             
             if display_quiz_form(st.session_state.questions):
                 display_results(st.session_state.questions)

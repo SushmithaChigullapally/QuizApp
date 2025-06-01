@@ -5,7 +5,7 @@ import streamlit as st
 def generate_quiz_questions(topic, num_questions, difficulty):
     """Generate quiz questions using Gemini API"""
     try:
-        genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
+        genai.configure(api_key="AIzaSyCah6l-MWhyWsXPBWMjU0JCWt2l_psJsWY")
         model = genai.GenerativeModel('gemini-2.0-flash')
         
         prompt = f"""Create {num_questions} multiple-choice {difficulty}-level questions from the text {topic}. 

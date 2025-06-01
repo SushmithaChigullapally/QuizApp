@@ -63,7 +63,7 @@
 import google.generativeai as genai
 import streamlit as st
 
-# ✅ Configure Gemini API once at the top
+
 genai.configure(api_key="AIzaSyCah6l-MWhyWsXPBWMjU0JCWt2l_psJsWY")
 
 def generate_quiz_questions(topic, num_questions, difficulty):
